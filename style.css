@@ -28,6 +28,20 @@ input[type="date"] {
   box-sizing: border-box;
 }
 
+#message {
+  /* width: 100%; */
+  padding: 4rem;
+  padding-left: 0.75rem; /* Adjust as needed */
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  /* border: 2px solid #007bff;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.2s; */
+}
+
 button {
   padding: 0.5rem 1rem;
   background-color: #28a745;
@@ -44,6 +58,33 @@ button:hover {
   background-color: #218838;
 }
 
+/* Style the label */
+label[for="socialmedia"] {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the select dropdown */
+#socialmedia {
+  width: 100%;
+  padding: 0.5rem;
+  /* border: 1.5px solid #007bff; */
+  border-radius: 4px;
+  /* background: #f8f9fa; */
+  /* font-size: 1rem; */
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  /* transition: border-color 0.2s; */
+}
+
+#socialmedia:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
 @media (max-width: 500px) {
   form {
     padding: 1rem;
@@ -54,4 +95,10 @@ h1 {
   /* color: blue; */
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
 }
